@@ -11,6 +11,7 @@ const sampleImage = reactsvg;
 const samplesnatchimg = samplesnatch;
 const venuesimg = venues;
 const markedzimg = markedz;
+
 const Example = () => {
   return (
     <>
@@ -57,7 +58,7 @@ const SlidingFeatureDisplay = ({ featureInView }) => {
         justifyContent:
           featureInView.contentPosition === "l" ? "flex-end" : "flex-start",
       }}
-      className="pointer-events-none sticky top-0 z-10 hidden h-screen w-full items-center justify-center md:flex"
+      className="sticky top-0 z-10 hidden h-screen w-full items-center justify-center md:flex"
     >
       <motion.div
         layout
@@ -150,7 +151,7 @@ const ExampleFeature = ({ featureInView }) => {
           alt={featureInView.title}
           className="w-full h-72 object-cover rounded-lg mb-4"
         />
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 z-20 relative">
           <a
             href={featureInView.githubUrl}
             target="_blank"

@@ -4,6 +4,10 @@ import anime from "animejs";
 import { useAnimation, useInView, motion } from "framer-motion";
 
 const WaterDropHero = () => {
+  const handleContactClick = () => {
+    window.open("https://www.linkedin.com/in/alexander-bjerketvedt/", "_blank");
+  };
+
   return (
     <section className="flex items-center justify-center min-h-screen bg-slate-900 px-8 py-24 md:px-12 md:py-32">
       <div className="relative mx-auto max-w-5xl">
@@ -23,14 +27,17 @@ const WaterDropHero = () => {
           </Reveal>
           <Reveal>
             <p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base">
-              Ive spent the last 2 years building and studiying at Noroff School
-              of Technology & Digital Media some. I´m also currently learning
-              the rest of the stack so I can grow as a developer. Lets connect!
+              Ive spent the last 2 years building and studying at Noroff School
+              of Technology & Digital Media. Im also currently learning the rest
+              of the stack so I can grow as a developer. Lets connect!
             </p>
           </Reveal>
           <Reveal>
-            <button className="pointer-events-auto mt-4 rounded bg-indigo-600 px-4 py-2 font-medium text-slate-100 transition-all hover:bg-indigo-700 active:scale-95 md:mt-6">
-              Contact me
+            <button
+              onClick={handleContactClick}
+              className="pointer-events-auto mt-4 rounded bg-indigo-600 px-4 py-2 font-medium text-slate-100 transition-all hover:bg-indigo-700 active:scale-95 md:mt-6"
+            >
+              Lets connect
             </button>
           </Reveal>
         </div>
