@@ -218,12 +218,12 @@ const projects = [
   },
   {
     id: 4,
-    callout: "Project Exam 2",
-    title: "Zvenue",
-    description: "Built with Noroff API, React JS, Tailwind.",
+    callout: "Coming soon",
+    title: "To be announced",
+    description: "Coming soon. Stay tuned!",
     contentPosition: "l",
-    image: sampleImage, // Replace with actual image path
-    githubUrl: "https://github.com/yourusername/zvenue",
-    liveDemoUrl: "https://zvenue.com",
+    image: sampleImage,
+    githubUrl: "https://github.com/",
+    liveDemoUrl: "",
   },
 ];
